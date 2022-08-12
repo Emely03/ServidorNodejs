@@ -1,6 +1,8 @@
-
+//despierta el servidor app.js
 
 import {Servidor} from './services/Servidor.js'
+//Importanmos dotenv para manipular las variables de entorno
+
 import 'dotenv/config'
 
 //Para utilizar una clase se debe primero instanciar
@@ -9,3 +11,4 @@ import 'dotenv/config'
 
 let servidorNodejs=new Servidor()
 servidorNodejs.encenderServidor()
+console.log(process.env.PORT) // remove this after you've confirmed it working

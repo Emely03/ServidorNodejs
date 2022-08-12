@@ -1,0 +1,13 @@
+*para correr el servidor en la consola= node app.js (el nombre del archivo)
+*npm install (instalar todos los paquetes)
+
+MONGO:
+*entrar free
+*DEPLOYMENT: database
+
+Codigos protocopo http:
+se definen por funciones o problemas:
+*2xx: Respuestas buenas(200,204...)
+*3xx: Respuestas de conexion-redireccion RED
+*4xx: Respuesta del lado del cliente (401:)
+*5xx: Respuestas del lado del servidor
