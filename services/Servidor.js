@@ -22,19 +22,24 @@ import express from 'express' //Se está utilizando el paquete express
 export class Servidor{
     constructor(){
         this.app = express()//atributo de la variable
+        this.habilitarBody()
         this.atenderPeticiones()//Se atiende las peticiones del usuario
     }
     
     atenderPeticiones(){//enrutar peticiones
+     
         this.app.use('/', routes)
           
     }
-
+    habilitarBody(){
+        this.app.use(express.json())
+    }
     encenderServidor(){
         this.app.listen(process.env.PORT,function(){
-            console.log("servidor encendido"+process.env.PORT)
+            console.log("servidor encendido "+ process.env.PORT)
     })
     }
 
+    
 
 }
