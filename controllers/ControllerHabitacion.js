@@ -59,12 +59,24 @@ export class ControllersHabitacion{
      }}
 
     //editar habitacion
-    editarHabitacion(request,response){  try{
-        response.status(200).json({})
-         
+    editarHabitacion(request,response){ 
+        
+        //recibir id como parametro
+        let id=request.params.id
+        //Recibir los datos con los que voy a editas (body)
+        let datos=request.body 
+        try{
+            response.status(200).json({
+            mensaje:"exito editando la habitacion" +id,
+            dato:datos
+        })
+             
 
      } catch(error){ //fallo resolviendo la peticion
-         response(400).json({})
+         response(400).json({
+            mensaje:"Fallo editando habitancion" + error, 
+            dato:null
+         })
      }}
 
     //eliminar habitacion

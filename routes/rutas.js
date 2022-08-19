@@ -18,7 +18,7 @@ routes.get('/viajes/v1/habitacion/:id', controllersHabitacion.buscarHabitacionId
 
 routes.post('/viajes/v1/habitacion', controllersHabitacion.agregarHabitacion)
 
-routes.put('/viajes/v1/habitacion', controllersHabitacion.editarHabitacion)
+routes.put('/viajes/v1/habitacion/:id', controllersHabitacion.editarHabitacion)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

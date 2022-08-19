@@ -18,6 +18,9 @@ import express from 'express' //Se está utilizando el paquete express
  //se llama las rutas/routes
  import { routes } from '../routes/rutas.js'
 
+ //Llamar metodo conectar base de datos
+ import {conectar} from '../database/conexion.js'
+
 //clase es un cunjunto de atirbutos y metodos
 export class Servidor{
     constructor(){
@@ -40,6 +43,8 @@ export class Servidor{
     })
     }
 
-    
+  conectarConBD(){
+    conectar()
+  }  
 
 }

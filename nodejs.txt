@@ -5,6 +5,8 @@
 *La peticion llega al archivo de rutas
 *Para usar una clase hay que instanciarla por medio de un objeto
 *el paso de datos por el cuerpo middleware
+*ESPERA CON PROCESOS ASINCRONICOS
+*Capas modelos sirven para llevar el control de que datos permito que entre en el proceso, necesito el paquete mongos
 
 *para correr el servidor en la consola= node app.js (el nombre del archivo)
 *npm install (instalar todos los paquetes)
@@ -13,6 +15,7 @@
 MONGO:
 *entrar free
 *DEPLOYMENT: database
+*Enviroment: se guarda las bd de mongo atlas
 
 Codigos protocopo http:
 se definen por funciones o problemas:
